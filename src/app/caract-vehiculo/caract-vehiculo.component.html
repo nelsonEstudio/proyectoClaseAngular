@@ -1,0 +1,26 @@
+<!-- <p>caract-vehiculo works!</p> -->
+<p>Características Generales del Vehículo</p>
+<div style="width: 25rem;">
+<table class="tablaCaracteriticas" >
+	<thead>
+		<tr>
+			<th scope="col">Caracteristica</th>
+			<th scope="col">Valor</th>
+		</tr>
+	</thead>
+	<tbody >     
+            <tr><td>Marca</td><td>{{vehiculos[0].marca }}</td></tr>
+            <tr><td>Modelo</td><td>{{ vehiculos[0].modelo }}</td></tr>
+			<tr><td>Año</td><td>{{ vehiculos[0].year | number }}</td></tr>
+			<tr><td>Versión</td><td>{{ vehiculos[0].version }}</td></tr>
+            <tr><td>Color</td><td>{{ vehiculos[0].color }}</td></tr>
+            <tr><td>Tipo Combustible</td><td>{{ vehiculos[0].tipoCombustible }}</td></tr>
+            <tr><td>Puertas</td><td>{{ vehiculos[0].puertas | number }}</td></tr>
+            <tr><td>Transmision</td><td>{{ vehiculos[0].transmision }}</td></tr>
+            <tr><td>Motor</td> <td>{{ vehiculos[0].motor | number }}</td></tr>
+            <tr><td>Tipo Carroceria</td><td>{{ vehiculos[0].tipoCarroceria }}</td></tr>
+            <tr><td>Kilometros</td><td>{{ vehiculos[0].kilometros | number }}</td></tr>         
+            
+	</tbody>
+</table>
+</div>

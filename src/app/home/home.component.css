@@ -1,0 +1,14 @@
+.buscar{
+   position: relative;
+   top: 40px; left: 40px;
+}
+
+.filtrar{
+    position: relative;
+    top: 40px; left: 40px;
+}
+
+.cardvehiculo{
+    position: relative;
+     top:70%;    left: 25%;
+}

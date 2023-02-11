@@ -1,0 +1,13 @@
+<!-- <p>card-vehiculo works!</p> style="width: 18rem;-->
+
+<div class="card" *ngFor="let vh of vehiculos ">
+  <p *ngIf = "vh.show">Muestra el campo show </p>
+    <img src="assets/images/{{vh.imagen}}" class="card-img-top" alt="Imagen del carro {{vh.imagen}}">
+    <div class="card-body">
+      <h5 class="card-title">{{vh.titulo}}</h5>
+      <p class="card-precio">{{vh.precio}} de pesos colombianos</p>
+      <p class="card-ubicacion">{{vh.ubicacion}}</p>
+      <p class="card-text">{{vh.texto}}</p>
+      <a href="#" class="btn btn-primary">Ir a Características</a>
+    </div>
+  </div>

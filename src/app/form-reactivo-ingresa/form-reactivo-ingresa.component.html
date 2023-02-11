@@ -1,0 +1,11 @@
+<!-- <p>form-reactivo-ingresa works!</p> -->
+
+<form (ngSubmit)="onSubmit"  [formGroup]="ingresaForm"> 
+  <input type="text" formControlName="correo" placeholder="correo electrónico">
+  <input type="text" formControlName="contrasena" placeholder="contraseña">
+  <br>
+  <input type="radio" formControlName="leidoautorizo" >He leido, entendido y autorizo los términos<br>
+  <button type="submit">Continuar</button>
+   <hr>
+   ¿No estás registrado?   Registrate <a routerLink="/registro">aquí</a>
+</form>

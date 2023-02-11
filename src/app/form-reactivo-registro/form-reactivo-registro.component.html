@@ -1,0 +1,15 @@
+<!-- <p>form-reactivo-registro works!</p> -->
+
+<form (ngSubmit)="onSubmit"  [formGroup]="registroForm"> 
+    <input type="text" formControlName="nombre" placeholder="nombre(s)">
+    <input type="text" formControlName="apellido" placeholder="apellidos(s)">
+    <input type="number" formControlName="celular" placeholder="numero celular">
+    <input type="text" formControlName="correo" placeholder="correo electrónico">
+    <input type="text" formControlName="contrasena" placeholder="contraseña">
+    <br>
+    <input type="radio" formControlName="leidoautorizo" >He leido, entendido y autorizo los términos<br>
+    <button type="submit">Crear</button>
+  
+  </form>
+  
+

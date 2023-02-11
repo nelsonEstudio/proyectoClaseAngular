@@ -1,0 +1,7 @@
+.tablaCaracteriticas {
+    background-color: rgb(195, 192, 198);
+    border-style: inset;
+    border-collapse: 5px;
+    border-color: black;
+    border-inline: dotted;
+}

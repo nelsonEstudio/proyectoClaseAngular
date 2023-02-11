@@ -1,0 +1,7 @@
+<!-- <p>formulario-reactivo works!</p> -->
+
+<form (ngSubmit)="onSubmit()" [formGroup]="loginForm">
+    <input type="text" formControlName="usuario" placeholder="Usuario">
+    <input type="text" formControlName="contrasena" placeholder="Contraseña">
+    <button type="submit">Enviar</button>
+</form>

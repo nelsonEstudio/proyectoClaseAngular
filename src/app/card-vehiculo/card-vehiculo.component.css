@@ -1,0 +1,12 @@
+.card {
+    background-color: rgb(233, 233, 232);
+    width: 300px;
+}
+
+
+.card-title {
+    font-size:xx-large;
+}
+.card-img-top {
+    width: 300px;
+}
