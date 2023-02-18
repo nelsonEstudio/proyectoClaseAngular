@@ -9,7 +9,8 @@ import { TarjetainformacionService } from '../services/tarjetainformacion.servic
 export class CardVehiculoComponent {
 vehiculos: any;  //variable de instancia
 
-constructor (private infoVehiculo:TarjetainformacionService) { 
+constructor (private infoVehiculo:TarjetainformacionService) {
+   
   this.vehiculos=infoVehiculo.getVehiculos();
   
  }
