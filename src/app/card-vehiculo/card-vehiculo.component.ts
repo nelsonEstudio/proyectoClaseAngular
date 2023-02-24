@@ -8,11 +8,16 @@ import { TarjetainformacionService } from '../services/tarjetainformacion.servic
 })
 export class CardVehiculoComponent {
 vehiculos: any;  //variable de instancia
-
+datoBuscar: string='';
 constructor (private infoVehiculo:TarjetainformacionService) {
    
-  this.vehiculos=infoVehiculo.getVehiculos();
+  infoVehiculo.getVehiculos().subscribe(data=>{
+    this.vehiculos=data
+  })
   
  }
+  busqueda(val:string):void{
+    this.datoBuscar=val
+  }
 
 }

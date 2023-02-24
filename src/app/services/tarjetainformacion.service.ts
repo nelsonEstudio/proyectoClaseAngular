@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -30,7 +31,8 @@ export class TarjetainformacionService {
               }
               ]
   constructor() {   }
-  getVehiculos () {return this.vehiculos}            
+  getVehiculos () {return of(this.vehiculos)}       
+
   search(infoUsuario: string) {
     console.log(infoUsuario)
     return this.vehiculos.filter(resultado => resultado.titulo.includes(infoUsuario)).map(result => { 

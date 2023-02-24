@@ -1,6 +1,9 @@
 <!-- <p>card-vehiculo works!</p> style="width: 18rem;-->
+<div  class="buscar">   
+  <app-barra-buscar  (search)="busqueda($event)">  </app-barra-buscar>
+</div>
 
-<div class="card" *ngFor="let vh of vehiculos ">
+<div class="card" *ngFor="let vh of vehiculos | buscar:'titulo':datoBuscar">
   <p *ngIf = "vh.show">Muestra el campo show </p>
     <img src="assets/images/{{vh.imagen}}" class="card-img-top" alt="Imagen del carro {{vh.imagen}}">
     <div class="card-body">

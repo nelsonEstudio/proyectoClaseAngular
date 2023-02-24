@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { TarjetainformacionService } from '../services/tarjetainformacion.service';
 
 
@@ -9,11 +9,15 @@ import { TarjetainformacionService } from '../services/tarjetainformacion.servic
 })
 export class BarraBuscarComponent {
   valorIngresado!: string;
-  constructor(private informacionTarjeta: TarjetainformacionService  ){
+  /*constructor(private informacionTarjeta: TarjetainformacionService  )*/
+  constructor(){
      
   }
-  busqueda() {
+  @Output() search:EventEmitter<string>=new EventEmitter<string>();
+
+
+ /* busqueda() {
     this.informacionTarjeta.search(this.valorIngresado)
-   }
+   }*/
  
 }

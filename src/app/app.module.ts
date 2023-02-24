@@ -18,6 +18,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormularioReactivoComponent } from './formulario-reactivo/formulario-reactivo.component';
 import { FormReactivoIngresaComponent } from './form-reactivo-ingresa/form-reactivo-ingresa.component';
 import { FormReactivoRegistroComponent } from './form-reactivo-registro/form-reactivo-registro.component';
+import { BuscarPipe } from './pipes/buscar.pipe';
 
 @NgModule({
     declarations: [
@@ -34,8 +35,9 @@ import { FormReactivoRegistroComponent } from './form-reactivo-registro/form-rea
         FormularioReactivoComponent,
         FormReactivoIngresaComponent,
         FormReactivoRegistroComponent,
+        BuscarPipe,
     ],
-    providers: [],
+    providers: [BuscarPipe], 
     bootstrap: [AppComponent],
     imports: [
         BrowserModule,
