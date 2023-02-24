@@ -5,7 +5,7 @@
 
 <div class="card" *ngFor="let vh of vehiculos | buscar:'titulo':datoBuscar">
   <p *ngIf = "vh.show">Muestra el campo show </p>
-    <img src="assets/images/{{vh.imagen}}" class="card-img-top" alt="Imagen del carro {{vh.imagen}}">
+    <img src="assets/images/{{vh.imagen}}" class="card-img-top" alt="Imagen del carro {{vh.imagen}}">   
     <div class="card-body">
       <h5 class="card-title">{{vh.titulo}}</h5>
       <p class="card-precio">{{vh.precio}} de pesos colombianos</p>
